@@ -3,52 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Original clean-room portfolio archive." />
-    <title>Portfolio Website Archive</title>
+    <meta name="description" content="Gamenest — clean-room portfolio study untuk komunitas dan discovery game." />
+    <title>Gamenest — Community Play Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="archive" aria-labelledby="project-name">
-      <header class="masthead">
-        <p class="kicker">OKKARHYS / WEBSITE ARCHIVE</p>
-        <p class="archive-id">PUBLIC SOURCE REPOSITORY</p>
+    <a class="skip-link" href="#mood">Langsung ke pilihan suasana bermain</a>
+    <main id="top">
+      <header class="site-header">
+        <a class="brand" href="#top">GAMENEST <span>// COMMUNITY PLAY</span></a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+        <nav id="main-navigation" class="navigation" aria-label="Navigasi utama">
+          <a href="#mood">Mulai</a>
+          <a href="#ruang">Ruang bermain</a>
+          <a href="#pendekatan">Pendekatan</a>
+        </nav>
       </header>
 
-      <section class="hero">
-        <p class="eyebrow">Portfolio record</p>
-        <h1 id="project-name">Project Archive</h1>
-        <p class="discipline" id="project-discipline">Website Development &amp; SEO</p>
-        <p class="intro">
-          A public, original archive shell for a portfolio project. This repository preserves a clear starting point while source materials are curated responsibly.
-        </p>
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="public/assets/gamenest-community-room.png" alt="Sekelompok orang dewasa bermain bersama di ruang komunitas dengan pencahayaan biru dan koral." />
+        <div class="hero-copy">
+          <p class="eyebrow">Komunitas <span>·</span> Discovery <span>·</span> Main bareng</p>
+          <h1 id="hero-title">Cari teman.<br />Bukan sekadar<br />match.</h1>
+          <p>Studi portofolio tentang ruang digital yang membantu orang menemukan ritme bermain dan komunitas yang terasa pas.</p>
+          <a class="hero-link" href="#mood">Pilih suasanamu <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="case-label">Clean-room portfolio study<br />Bukan platform game aktif</p>
       </section>
 
-      <section class="record" aria-label="Archive record">
-        <div>
-          <p class="label">Repository type</p>
-          <p>Clean-room archive</p>
+      <section id="mood" class="mood-section" aria-labelledby="mood-title">
+        <div class="mood-heading">
+          <p class="eyebrow">Sebelum masuk ruang</p>
+          <h2 id="mood-title">Kamu datang untuk apa?</h2>
         </div>
-        <div>
-          <p class="label">Scope</p>
-          <p>Website Development &amp; SEO</p>
-        </div>
-        <div>
-          <p class="label">Source status</p>
-          <p>Reference materials pending</p>
+        <div class="mood-layout">
+          <div class="mood-options" role="group" aria-label="Pilih tujuan bermain">
+            <button class="mood-option is-active" type="button" data-mood="santai" aria-pressed="true"><span>01</span>Main santai</button>
+            <button class="mood-option" type="button" data-mood="tim" aria-pressed="false"><span>02</span>Cari tim</button>
+            <button class="mood-option" type="button" data-mood="komunitas" aria-pressed="false"><span>03</span>Ikuti komunitas</button>
+          </div>
+          <article class="mood-reading" aria-live="polite">
+            <p id="mood-kicker" class="reading-kicker">Main santai</p>
+            <h3 id="mood-title-copy">Masuk untuk menikmati permainan, bukan membuktikan apa-apa.</h3>
+            <p id="mood-copy">Ruang yang baik memberi jalan ringan untuk menemukan sesi yang sesuai ritme, tanpa mengubah setiap pertemuan menjadi kompetisi.</p>
+          </article>
         </div>
       </section>
 
-      <section class="note" aria-labelledby="note-title">
-        <p class="eyebrow">Provenance note</p>
-        <h2 id="note-title">Built to be honest about what is available.</h2>
-        <p>
-          The public page is intentionally independent. It does not reproduce a current website or imply access to proprietary source code, design files, assets, analytics, or client outcomes.
-        </p>
+      <section id="ruang" class="spaces-section" aria-labelledby="spaces-title">
+        <div class="spaces-intro">
+          <p class="eyebrow">Anatomi komunitas</p>
+          <h2 id="spaces-title">Bermain terasa lebih baik saat ruangnya jelas.</h2>
+          <p>Konsep ini memprioritaskan relasi, konteks, dan rasa aman dalam menemukan orang untuk bermain. Nama game, pertandingan, statistik, dan akun di bawah ini sengaja tidak dibuat sebagai data nyata.</p>
+        </div>
+        <div class="spaces-grid">
+          <article><span>01</span><h3>Temukan konteks</h3><p>Mulai dari cara bermain dan suasana yang dicari, bukan hanya daftar permainan yang ramai.</p></article>
+          <article><span>02</span><h3>Masuk dengan nyaman</h3><p>Bantu pemain memahami ruang yang akan dimasuki sebelum mengajak mereka ikut serta.</p></article>
+          <article><span>03</span><h3>Jaga koneksi</h3><p>Buat alasan untuk kembali pada orang dan komunitas yang sudah terasa cocok.</p></article>
+        </div>
       </section>
 
-      <footer>
-        <p>© <span id="year"></span> Okkarhys</p>
-        <a href="https://github.com/israanwar" rel="noreferrer">GitHub profile</a>
+      <section id="pendekatan" class="approach-section" aria-labelledby="approach-title">
+        <div class="approach-heading">
+          <p class="eyebrow">Pendekatan karya</p>
+          <h2 id="approach-title">Dari game ke rasa memiliki.</h2>
+        </div>
+        <ol class="approach-list">
+          <li><span>01</span><div><strong>Mulai dari manusia</strong><p>Mengutamakan alasan orang datang sebelum memilih pola discovery.</p></div></li>
+          <li><span>02</span><div><strong>Kurangi friksi</strong><p>Menata pilihan agar menemukan ruang yang tepat tidak terasa seperti mencari jarum di tumpukan.</p></div></li>
+          <li><span>03</span><div><strong>Berikan arah</strong><p>Membentuk pengalaman yang tetap sederhana meski komunitas dan jenis permainan bertambah.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="provenance" aria-labelledby="provenance-title">
+        <p class="eyebrow">Catatan provenance</p>
+        <div>
+          <h2 id="provenance-title">Dibuat untuk mendemonstrasikan pengalaman, bukan meniru platform lain.</h2>
+          <p>Gamenest adalah clean-room portfolio study. Seluruh visual dibuat secara orisinal untuk repositori ini; tidak ada penggunaan IP game, logo, karakter, data pemain, event, statistik, maupun akun pihak ketiga. Ini bukan layanan aktif dan tidak menyatakan komunitas atau sesi permainan yang benar-benar tersedia.</p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>OKKARHYS <span>/</span> WEBSITE DEVELOPMENT &amp; SEO</p>
+        <a href="#top">Kembali ke atas <span aria-hidden="true">↑</span></a>
       </footer>
     </main>
     <script src="script.js"></script>

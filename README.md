@@ -1,15 +1,21 @@
-# Portfolio Website Archive
+# Gamenest — Community Play Case Study
 
-This public repository is an original, clean-room archive for a project listed in the Okkarhys Website Development & SEO portfolio.
+An original, clean-room portfolio case study for a Gamenest entry in the **Website Development & SEO** portfolio.
 
-## Status
+## Scope
 
-The original project source, design files, and live-site assets have not been supplied to this repository. The included page is an original archive shell, not a reconstruction of any active website.
+- Responsive community and game-discovery information experience.
+- Interactive intent selector for casual play, team discovery, and community participation.
+- Original community-lounge visual generated specifically for this repository.
 
 ## Provenance
 
-- No third-party or current-site source code is included.
-- No current-site design or visual assets are reused.
-- No performance, traffic, ranking, conversion, client, or campaign claims are made without source evidence.
+This is not an active gaming platform. It does not use third-party game intellectual property, logos, characters, player data, user accounts, event data, or gameplay assets. No real availability, community, event, or performance claim is made.
 
-Project-specific metadata lives in `project.json`.
+## Run locally
+
+```bash
+python3 -m http.server 4180
+```
+
+Open `http://127.0.0.1:4180/`.
